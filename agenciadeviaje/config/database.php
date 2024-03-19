@@ -41,7 +41,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('mysql://127.0.0.1:3306/ejemplo'),
+            'url' => env('http://localhost'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'ejemplo'),
