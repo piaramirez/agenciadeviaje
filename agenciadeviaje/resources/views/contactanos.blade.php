@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola, es de mera pruebas</title>
+    <title>Document</title>
 </head>
 <body>
 <nav>
@@ -14,6 +14,7 @@
             <li><a href="{{ route('contactos.page'); }}">Contactos</a></li>
         </ul>
     </nav>
-    <h1>Siuuu</h1>
+    <h1>Estamos dentro de contactanos</h1>
+    
 </body>
 </html>

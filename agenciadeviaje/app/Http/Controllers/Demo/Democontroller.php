@@ -13,4 +13,10 @@ class Democontroller extends Controller
  public function servicioMetodo(){
     return view('servicios');
  }
+ public function contactosMetodo(){
+    return view('contactanos');
+ }
+ public function ejemploMetodo(){
+    return view('ejemplo');
+ }
 }

@@ -5,5 +5,9 @@ use App\Http\Controllers\Demo\Democontroller;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/ejemplo', [Democontroller::class, 'Index']);
-Route::get('servicios', [Democontroller::class, 'servicioMetodo']);
+Route::controller(Democontroller::class)->group(function (){
+    Route::get('/index', 'Index')->name('index.page');
+    Route::get('/ejemplo', 'ejemploMetodo')->name('ejemplo.page');
+    Route::get('/servicios', 'servicioMetodo')->name('servicio.page');
+    Route::get('/contactanos', 'contactosMetodo')->name('contactos.page');
+});
